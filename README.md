@@ -1,3 +1,5 @@
+This is my remote working repository for implementing gas optimization technique for [Udemy gas optimization course](https://www.udemy.com/course/advanced-solidity-understanding-and-optimizing-gas-costs/?referralCode=C4684D6872713525E349)  
+
 # [RareSkills](https://rareskills.io) Gas Puzzles
 
 If you want to learn about gas optimization, take the [Udemy gas optimization course](https://www.udemy.com/course/advanced-solidity-understanding-and-optimizing-gas-costs/?referralCode=C4684D6872713525E349)!
