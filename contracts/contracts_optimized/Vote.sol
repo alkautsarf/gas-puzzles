@@ -8,7 +8,7 @@ contract OptimizedVote {
         bool voted;
     }
 
-    struct Proposal {
+    struct Proposal {  //? Rearrange struct to only utilize 2 slot at most
         uint8 voteCount;
         bool ended;
         bytes32 name;
@@ -26,8 +26,8 @@ contract OptimizedVote {
         require(!voters[msg.sender].voted, 'already voted');
         voters[msg.sender].vote = _proposal;
         voters[msg.sender].voted = true;
-        unchecked {
-            proposals[_proposal].voteCount++;
+        unchecked { //? used unchecked to optimize gas cost since no need to check for underflow/overflow
+            proposals[_proposal].voteCount++; //? used ++ instead of += 1
         }
     }
 

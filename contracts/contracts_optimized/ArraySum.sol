@@ -12,7 +12,7 @@ contract OptimizedArraySum {
     }
 
     // optimize this function
-    function getArraySum() external view returns (uint256 sum) {
+    function getArraySum() external view returns (uint256 sum) { //? Declaring variable here to optimize gas
         for (uint256 i = 0; i < array.length; i++) {
             sum += array[i];
         }  
